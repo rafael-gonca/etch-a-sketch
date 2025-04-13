@@ -10,3 +10,9 @@ for (let i = 1; i <= 16; i++) {
     };
 };
 
+const squares = document.querySelectorAll(".square");
+squares.forEach(square => {
+    square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = 'black';
+    });
+});
