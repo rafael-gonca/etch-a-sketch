@@ -1,0 +1,19 @@
+body,
+html {
+    background-color: rgb(121, 99, 74);
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    flex-direction: row;
+}
+
