@@ -44,6 +44,24 @@ const btnClick = btn.addEventListener("click", () => {
                 });
             };
         };
+        const circle = document.querySelector('#color-picker')
+        const colorPicker = document.querySelector('#colorPicker')
+        circle.addEventListener('click', () => {
+            let a = colorPicker.click()
+        })
+
+        colorPicker.addEventListener('input', (e) => {
+            const customText = document.querySelector('.custom-color')
+            const currentColor = e.target.value;
+            circle.style.backgroundColor = currentColor;
+            customText.style.color = currentColor;
+
+            squares.forEach(square => {
+                square.addEventListener("mouseover", () => {
+                square.style.backgroundColor = currentColor;
+                });
+            });
+        })
     };
 });
 
@@ -94,6 +112,7 @@ colorPicker.addEventListener('input', (e) => {
     circle.style.backgroundColor = currentColor;
     customText.style.color = currentColor;
 
+    const squares = document.querySelectorAll(".square");
     squares.forEach(square => {
         square.addEventListener("mouseover", () => {
         square.style.backgroundColor = currentColor;
