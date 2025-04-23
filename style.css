@@ -5,10 +5,19 @@
 }
 
 body, html {
-    background-color:#6f3d99bb;
-    height: 100%;
+    background-color: #3b1758bb;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Jersey 20';
+    font-size: 30px;
+}
+
+.container-btn {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+    margin-top: 200px;
 }
 
 .container {
@@ -16,27 +25,86 @@ body, html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    width: 480px;
+    height: 480px;
+    align-self: center;
+    margin-top: 20px;
+    box-sizing: content-box;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.newContainer {
+    width: 480px;
+    height: 480px;
 }
 
 .square {
     width: 30px;
     height: 30px;
     background-color: white;
+    border: 1px solid white;
 }
 
-#btn {
-    margin: 20px 0 0 20px;
-    width: 140px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #3b1758bb;
+    background-color: #c17ee0;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3b1758bb;
+}
+
+.custom-color {
+    color: white;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+#btn,
+#rgb-btn,
+#erase-btn {
+    width: 110px;
     padding: 12px 12px;
-    font-size: 14px;
-    border-radius: 5px;
+    font-family: 'Jersey 20';
+    font-size: 20px;
+    border-radius: 10px;
     background-color:#c17ee0;
     border: none;
     cursor: pointer;
-    align-self: flex-start;
+    color: #3b1758bb;
 }
 
-#btn:hover {
+#color-picker {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: center;
+    align-items: center;
+}
+
+#btn:hover,
+#rgb-btn:hover,
+#erase-btn:hover {
     background-color: rgb(155, 89, 185);
 }
+
